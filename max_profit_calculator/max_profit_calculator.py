@@ -2,6 +2,8 @@
 #Given an array of stock prices, find the most profit you can make with a single transaction
 #Each index represents a different day for that stock price
 #A transaction consists of purchasing a stock and selling it a different day
+#Time complexity: O(n^2)
+#Space complexity: O(n)
 
 priceList = [5, 11, 3, 50, 60, 90]
 
