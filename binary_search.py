@@ -1,3 +1,5 @@
+## This module utilizes merge sort if array is unsorted, then uses binary search to find target in array
+
 from merge_sort import mSort
 
 def bSearch(nums, target):
@@ -12,21 +14,21 @@ def bSearch(nums, target):
     upper = len(nums)-1
     found = False
     
-    ## Infinite Loop if target not in array. Needs debugging
-    while(not found):
+    ## Main Loop
+    while(lower <= upper):
         mid = (lower + upper)//2
         if(nums[mid] == target):
             found = True
-        elif(nums[mid] < target):
-            lower = mid
-        elif(nums[mid] > target):
-            upper = mid
-        elif(upper == 2):
-            print("Target not in array")
             break
+        elif(nums[mid] < target):
+            lower = mid + 1
+        elif(nums[mid] > target):
+            upper = mid - 1
     
     if(found):
         print("Target", target, "found at position", mid)
+    else:
+        print("Target not found in array")
 
     print( nums )
 

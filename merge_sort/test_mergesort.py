@@ -1,13 +1,13 @@
-
+## Unit Test
 
 import unittest
-import merge_sort as ms
+import mergesort as ms
 
 class TestMergeSort(unittest.TestCase):
 
     def test_mergesort(self):
         arr = [1, 4, 5, 7]
-        result = ms.merge_sort(arr)
+        result = ms.mSort(arr)
         flag = False
 
         #Checking if list is sorted
