@@ -1,3 +1,5 @@
+## This module utilizes merge sort to sort an array list
+
 ## Recursive method
 def mSort(arr):
     if len(arr) > 1:
