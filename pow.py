@@ -1,4 +1,4 @@
-## Calcuates the square root of a positive integer without using built-in functions
+## Given a base and exponent, exponentiates without using built-in functions
 
 ## Only works with whole numbers as expotents
 
