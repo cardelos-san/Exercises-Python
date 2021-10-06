@@ -1,6 +1,6 @@
 ## This module utilizes merge sort if array is unsorted, then uses binary search to find target in array
 
-from merge_sort import mSort
+from mergesort import mSort
 
 def bSearch(nums, target):
 
