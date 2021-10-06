@@ -6,7 +6,7 @@ class Node:
         self.nextElement = None
     
     ##  Returns current node
-    def getElement(self):
+    def getCurrent(self):
         return self.element
 
     ## Returns next node

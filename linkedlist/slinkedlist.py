@@ -7,7 +7,7 @@ class SLList:
         self.headElement = None
         self.currentSize = 0
 
-    ## Inserting new element                    
+    ## Inserting new element at the beginning of list                   
     def insert(self, value): # value -> any
 
         element = Node(value)             ## Creating new node obj
@@ -16,12 +16,13 @@ class SLList:
         self.currentSize += 1             ## Increasing list size
         print("New element created")
 
+    ## Displays list size
+    def displayListSize(self):
+        print("List Size: ", self.currentSize)
 
-
-
-    
-
-
-
-
-
+    ## Prints every element in list
+    def printAll(self):
+        elementToPrint = self.headElement
+        while elementToPrint is not None:
+            print(elementToPrint.getCurrent())
+            elementToPrint = elementToPrint.getNext()
