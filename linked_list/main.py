@@ -1,4 +1,4 @@
-from linked_list import SLList
+from linkedlist import SLList
 
 def run():
     a = SLList()
